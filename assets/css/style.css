@@ -24,6 +24,7 @@ html {
 .header {
     max-width: 1920px;
     width: 100%;
+    margin: auto;
 }
 
 .header-hero-cotainer {
@@ -590,4 +591,127 @@ html {
     color: var(--text-secondary);
     display: block;
     margin: 25px auto 0;
+}
+
+.dream-living-space {
+    width: 1194px;
+    height: 670px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dream-living-space__left__box {
+    width: 341px;
+    height: 527px;
+    background: #c4c4c4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.dream-living-space__left__box2 {
+    width: 366px;
+    height: 560px;
+    background: #c4c4c4;
+    position: absolute;
+    bottom: 46px;
+    left: 100px;
+    z-index: 20;
+}
+
+.dream-living-space__left__box3 {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 52px;
+    left: 399px;
+    z-index: 30;
+    background-color: var(--dark);
+    text-align: center;
+}
+
+.dream-living-space__left__box3 > img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: 30px auto 4px;
+}
+
+.dream-living-space__left__box3 > span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: "Inter", sans-serif;
+}
+
+.dream-living-space__right {
+    width: 567px;
+    height: 587px;
+    float: left;
+    margin-top: -55px;
+    font-family: "Nunito", sans-serif;
+}
+
+.dream-living-space__right__title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.5%;
+    color: var(--dark);
+    margin-bottom: 25px;
+}
+
+.dream-living-space__right__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 25px;
+}
+
+.dream-living-space__right__groups {
+    display: flex;
+    align-items: flex-start;
+    width: 407px;
+    color: #fff;
+    padding: 20px 12px;
+}
+
+.dream-living-space__right__groups:hover,
+.dream-living-space__right__groups.group-active {
+    box-shadow: 0px 0px 80px 0px #cbcbcb40;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dream-living-space__right__group__image {
+    width: 51px;
+    height: 51px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.dream-living-space__right__group__content__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: var(--dark);
+    margin-bottom: 24px;
+}
+
+.dream-living-space__right__group__content__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28%;
+    letter-spacing: -1%;
+    color: var(--text-secondary);
 }
