@@ -715,3 +715,225 @@ html {
     letter-spacing: -1%;
     color: var(--text-secondary);
 }
+
+.about-home {
+    width: 1209px;
+    height: 573px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-home__left {
+    width: 55%;
+    font-family: "Nunito", sans-serif;
+}
+
+.about-home__left__about-home {
+    display: flex;
+    align-items: center;
+}
+
+.about-home__left__about-home > img {
+    width: 17px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+.about-home__left__about-home > span {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -1.5%;
+    line-height: 74px;
+    color: var(--dark);
+}
+
+.about-home__left__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 56px;
+    letter-spacing: -1.5%;
+}
+
+.about-home__left__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--text-secondary);
+    display: block;
+    margin: 20px 0 30px;
+}
+
+.about-home__left__desc__items {
+    margin-bottom: 50px;
+}
+
+.about-home__left__desc__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 19px 0;
+}
+
+.about-home__left__desc__item__bullets {
+    width: 15px;
+    height: 11px;
+    background: var(--primary);
+    margin-right: 10px;
+}
+
+.about-home__left__desc__item__desc {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.about-home__right {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.about-home__right__items {
+    display: grid;
+    gap: 20px;
+}
+
+.about-home__right__item1,
+.about-home__right__item2,
+.about-home__right__item3 {
+    background-color: #c4c4c4;
+}
+
+.about-home__right__item1 {
+    width: 310px;
+    height: 560px;
+}
+
+.about-home__right__item2 {
+    width: 257px;
+    height: 290px;
+}
+
+.about-home__right__item3 {
+    width: 257px;
+    height: 250px;
+}
+
+.about-home-content__left__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+    width: 418px;
+}
+
+.about-home-content__left__tabs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.about-home-content__left__tab {
+    width: 88px;
+    height: 60px;
+    background: #9d9d9d;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    transition:
+        height 0.28s ease,
+        background 0.2s ease;
+}
+
+.about-home-content__left__tab_item {
+    width: 108px;
+    height: 73px;
+}
+
+.about-home-content__left__tab > span {
+    display: block;
+    position: relative;
+    top: -15px;
+    left: -11px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.about-home-content__left__tab.tab-about-active {
+    height: 95px;
+    width: 130px;
+    background: #9d9d9d;
+}
+
+.about-home-content__left__tab.tab-about-active > span {
+    top: -25px;
+    left: -25px;
+}
+
+.about-home-content__left__tab.bump {
+    animation: bumpUp 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-home-content__left__tab.bump {
+        animation: none;
+    }
+}
+
+.about-home-content__left__rule {
+    width: 63px;
+    height: 2px;
+    background: #ebebeb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 2px 0 12px;
+}
+
+.about-home-content__left__rule,
+.about-home-content__left__paginations {
+    position: relative;
+    top: 12px;
+}
+
+.about-home-content__left__paginations {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #9d9d9d;
+    width: 63px;
+    height: 24px;
+}
+
+.about-home-content__left__rule .rule-fill {
+    display: block;
+    height: 100%;
+    width: 33.33%;
+    background: var(--primary);
+    transition: width 0.38s ease;
+}
+
+.about-home-content__left__paginations .about-home-content__left__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 33.333%;
+    min-width: 0;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #627193;
+}
+
+.about-home-content__left__paginations
+    .about-home-content__left__pagination.pagination-about-active {
+    color: var(--dark);
+    font-size: 20px;
+}
