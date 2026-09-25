@@ -719,7 +719,7 @@ html {
 .about-home {
     width: 1209px;
     height: 573px;
-    margin: auto;
+    margin: 0 auto 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -838,6 +838,8 @@ html {
     align-items: flex-end;
     justify-content: space-between;
     height: 80px;
+    width: 326px;
+    min-width: 73%;
 }
 
 .about-home-content__left__tab {
@@ -936,4 +938,115 @@ html {
     .about-home-content__left__pagination.pagination-about-active {
     color: var(--dark);
     font-size: 20px;
+}
+
+.services {
+    background-color: #f2f6f7;
+    padding: 90px 0;
+}
+
+.services__container__top {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.services__container__top__title {
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.services__container__top__desc {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: #655f73;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.services__container__top__bottom {
+    margin-top: 50px;
+}
+
+.services__container__top__bottom__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+    width: 1170px;
+}
+
+.services__container__top__bottom__content__card {
+    width: 370px;
+    height: 355px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    padding: 39px;
+}
+
+.services__container__top__bottom__content__card__image {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    box-shadow: 0px 16px 45px -12px #0000001a;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.services__container__top__bottom__content__card__image > svg {
+    position: relative;
+    top: 16px;
+}
+
+.services__container__top__bottom__content__card__title {
+    font-family: "Nunito", sans-serif;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.services__container__top__bottom__content__card__desc {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    font-weight: 400;
+    color: #8c8c8c;
+    margin-bottom: 30px;
+}
+
+.services__container__top__bottom__content__card__btn {
+    outline: none;
+    border: none;
+    width: 117px;
+    height: 24px;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.services__container__top__bottom__content__card__btn > span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: var(--dark);
+}
+
+.services__container__top__bottom__content__card__btn > img {
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
 }
