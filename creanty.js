@@ -58,9 +58,27 @@ function initializeSlider(container) {
         setActive(0);
     }
 }
-
 document
     .querySelectorAll(
         ".header-hero-content__left__bottom, .about-home-content__left__bottom",
     )
     .forEach(initializeSlider);
+
+// Card List Featured Property
+const cardList = document.querySelector(".featured-property__bottom__cards");
+const toggleButton = document.querySelector("#toggleFeaturedExplore");
+const featuredPropertyBottom = cardList.closest(".featured-property__bottom");
+
+toggleButton.addEventListener("click", () => {
+    const isExpanded = cardList.classList.toggle("show-all");
+    featuredPropertyBottom.style.maxHeight = isExpanded
+        ? `${cardList.scrollHeight}px`
+        : "386px";
+    toggleButton.textContent = isExpanded ? "Collapse" : "Explore Property";
+});
+
+window.addEventListener("resize", () => {
+    if (cardList.classList.contains("show-all")) {
+        featuredPropertyBottom.style.maxHeight = `${cardList.scrollHeight}px`;
+    }
+});
