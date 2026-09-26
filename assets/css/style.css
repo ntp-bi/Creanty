@@ -1456,14 +1456,13 @@ html {
 .testimonial {
     width: 1440px;
     height: 850px;
-    margin: 150px auto;
+    margin: 150px auto 0;
     text-align: center;
 }
 
 .testimonial__header__title {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-style: Bold;
     font-size: 45px;
     line-height: 54px;
     letter-spacing: 0%;
@@ -1482,6 +1481,7 @@ html {
 
 .testimonial__content {
     width: 100%;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1591,4 +1591,161 @@ html {
     box-shadow: 0px 30px 35px -8px #fab33f26;
     position: relative;
     right: 140px;
+}
+
+.renting-real-estate-cta {
+    width: 1440px;
+    height: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.renting-real-estate-cta__title {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: -1.5%;
+    color: var(--dark);
+    margin-bottom: 60px;
+}
+
+.renting-real-estate-cta__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1070px;
+    margin: auto;
+}
+
+.renting-real-estate-cta__card {
+    width: 331px;
+    height: 170px;
+    position: relative;
+    box-shadow: 0px 15px 30px -10px #ee2a5240;
+}
+
+.renting-real-estate-cta__card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all linear 0.3s;
+}
+
+.renting-real-estate-cta__card::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(138, 138, 138, 0.8);
+    border-radius: 10px;
+}
+
+.renting-real-estate-cta__card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.renting-real-estate-cta__card__content {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.renting-real-estate-cta__card__content__name {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    color: #ffffff;
+    margin-bottom: 40px;
+    width: 219px;
+}
+
+.renting-real-estate-cta__card__content__btn {
+    width: 140px;
+    height: 50px;
+    box-shadow: 0px 15px 30px -10px #ee2a5240;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.renting-real-estate-cta__card__content__btn > span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: var(--primary);
+}
+
+.renting-real-estate-cta__card__content__btn > img {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+}
+
+.renting-real-estate-cta__newsletter {
+    width: 610px;
+    height: 80px;
+    margin: 50px auto 0;
+}
+
+.renting-real-estate-cta__newsletter > form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.renting-real-estate-cta__email {
+    position: relative;
+    width: 69%;
+    height: 100%;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+}
+
+.renting-real-estate-cta__icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 15px 0 20px;
+}
+
+.renting-real-estate-cta__email::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    color: #c0c0c0;
+    position: relative;
+    top: 3px;
+}
+
+.renting-real-estate-cta__btn {
+    width: 152px;
+    height: 56px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    background-color: var(--primary);
 }
