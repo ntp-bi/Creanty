@@ -190,3 +190,22 @@ if (testimonialImages?.length === 2 && testimonialPrevious && testimonialNext) {
         });
     });
 }
+
+// Card List Blog
+const blogList = document.querySelector(".housy-blog__content__cards");
+const toggleHouseBlog = document.querySelector("#toggleHouseBlog");
+const housyBlogContent = blogList.closest(".housy-blog__content");
+
+toggleHouseBlog.addEventListener("click", () => {
+    const isExpanded = blogList.classList.toggle("show-all");
+    housyBlogContent.style.maxHeight = isExpanded
+        ? `${blogList.scrollHeight}px`
+        : "504px";
+    toggleHouseBlog.textContent = isExpanded ? "Collapse" : "Read All";
+});
+
+window.addEventListener("resize", () => {
+    if (blogList.classList.contains("show-all")) {
+        housyBlogContent.style.maxHeight = `${blogList.scrollHeight}px`;
+    }
+});
